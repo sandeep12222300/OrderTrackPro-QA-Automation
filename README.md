@@ -108,10 +108,10 @@ mvn clean test -Dtest=LoginTest
 mvn clean test -Dtest=LoginTest#testSuccessfulLogin
 ```
 
-### Run with TestNG XML
+### Run with TestNG XML Suite
 ```bash
 mvn clean test
-# Note: testng.xml is already configured as default suite file in pom.xml
+# Note: testng.xml is explicitly configured in the maven-surefire-plugin
 ```
 
 ### Generate Reports
