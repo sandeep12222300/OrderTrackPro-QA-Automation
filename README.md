@@ -130,7 +130,8 @@ OrderTrackPro-QA-Automation/
 │   │       ├── pages/                  # Page Object Model classes
 │   │       │   ├── BasePage.java       # Base page with common methods
 │   │       │   └── LoginPage.java      # Login page objects and methods
-│   │       └── utils/                  # Utility classes (planned)
+│   │       └── utils/                  # Utility classes
+│   │           └── DriverFactory.java  # WebDriver factory (placeholder for future implementation)
 │   │
 │   └── test/java/
 │       └── com/ordertrackpro/
@@ -147,7 +148,7 @@ OrderTrackPro-QA-Automation/
 
 ### Key Components
 
-- **BasePage.java**: Base class for all page objects, provides common page operations and PageFactory initialization
+- **BasePage.java**: Base class for all page objects, initializes WebDriver and sets up PageFactory for element initialization
 - **LoginPage.java**: Page Object for login page with element locators and actions
 - **BaseTest.java**: Sets up WebDriver, manages browser lifecycle (setup/teardown), and initializes page objects
 - **LoginTest.java**: Contains test methods for various login scenarios
