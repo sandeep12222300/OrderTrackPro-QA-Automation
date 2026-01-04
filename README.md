@@ -131,7 +131,6 @@ OrderTrackPro-QA-Automation/
 │   │       │   ├── BasePage.java       # Base page with common methods
 │   │       │   └── LoginPage.java      # Login page objects and methods
 │   │       └── utils/                  # Utility classes (planned)
-│   │           └── DriverFactory.java  # WebDriver factory (planned for future use)
 │   │
 │   └── test/java/
 │       └── com/ordertrackpro/
@@ -255,7 +254,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- [OrangeHRM](https://opensource-demo.orangehrmlive.com/) for providing a demo application for testing
+- [OrangeHRM](https://www.orangehrm.com/) for providing a demo application for testing
 - [Selenium WebDriver](https://www.selenium.dev/) for browser automation capabilities
 - [TestNG](https://testng.org/) for the testing framework
 - [WebDriverManager](https://github.com/bonigarcia/webdrivermanager) for simplified driver management
