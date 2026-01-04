@@ -27,7 +27,7 @@ The framework currently automates login functionality testing for [OrangeHRM Dem
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| **Java** | 11+ | Core programming language |
+| **Java** | 8+ | Core programming language |
 | **Selenium WebDriver** | 4.14.1 | Browser automation |
 | **TestNG** | 7.8.0 | Test framework and assertions |
 | **Maven** | 3.6+ | Build and dependency management |
@@ -53,7 +53,7 @@ The framework currently automates login functionality testing for [OrangeHRM Dem
 
 Before running this project, ensure you have the following installed:
 
-- **Java Development Kit (JDK)**: Version 11 or higher
+- **Java Development Kit (JDK)**: Version 8 or higher
   ```bash
   java -version
   ```
@@ -110,7 +110,8 @@ mvn clean test -Dtest=LoginTest#testSuccessfulLogin
 
 ### Run with TestNG XML
 ```bash
-mvn clean test -DsuiteXmlFile=testng.xml
+mvn clean test
+# Note: testng.xml is already configured as default suite file in pom.xml
 ```
 
 ### Generate Reports
@@ -130,8 +131,9 @@ OrderTrackPro-QA-Automation/
 │   │       ├── pages/                  # Page Object Model classes
 │   │       │   ├── BasePage.java       # Base page with common methods
 │   │       │   └── LoginPage.java      # Login page objects and methods
-│   │       └── utils/                  # Utility classes
-│   │           └── DriverFactory.java  # WebDriver factory (placeholder for future implementation)
+│   │       ├── utils/                  # Utility classes
+│   │       │   └── DriverFactory.java  # WebDriver factory (placeholder for future implementation)
+│   │       └── App.java                # Main application entry point (placeholder)
 │   │
 │   └── test/java/
 │       └── com/ordertrackpro/
